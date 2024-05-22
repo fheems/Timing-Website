@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLOCK WEBSITE</title> 
+    <link rel="stylesheet" href="styles.css"> 
+    <!-- link to css  -->
+</head>
+<body>
+<!-- header below -->
+<header>
+    <h1>CLOCK WEB</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="clock.html">Live Clock</a></li>
+            <li><a href="stopWatch.html">StopWatch</a></li>
+            <li><a href="timer.html">Timer</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="clock-container">
+    <h1>Live Clock</h1>
+    <form id="city-form">
+        <label for="city">Enter City:</label>
+        <input type="text" id="city" name="city" required>
+        <button type="submit">Show Time</button>
+    </form>
+    <div id="clock-display">
+        <div id="city-name"></div>
+        <div id="date-time"></div>
+    </div>
+</div>
+
+<!-- footer below -->
+<footer>
+    © 2024 by fheems. All rights reserved.
+</footer>
+<script src="clock.js"></script>
+
+</body>
+</html>

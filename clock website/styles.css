@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+/* live clock css code below: */
+
+.clock-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 0 auto; /* Allow main to grow and shrink */
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px; /* Optional max-width for the container */
+}
+
+#clock-display {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+#city-name {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form label, form input, form button {
+    margin: 5px 0;
+}
+/* code for timer page css
+ */
+
+ .stopwatch-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1 0 auto; /* Allow main to grow and shrink */
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 500px; /* Optional max-width for the container */
+}
+
+
+#countdown-display {
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+}
+
+#start-button {
+    background-color: green;
+    color: white;
+}
+
+#stop-button {
+    background-color: red;
+    color: white;
+}
+
+#reset-button {
+    background-color: yellow;
+    color: black;
+}
+/* stop watch poage css  */
+
+
+.container {
+    background-color: #fff;
+    width: 40%;
+    min-width: 600px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 20px 0;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.338);
+}
+
+.timer-display {
+    position: relative;
+    width: 96%;
+    background: #fff;
+    left: 2%;
+    font-family: 'Roboto mono', monospace;
+    color: #0b0419;
+    font-size: 30px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(65, 5, 145, 0.25);
+}
+
+.buttons {
+    width: 90%;
+    margin: 60px auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons button {
+    width: 120px;
+    height: 45px;
+    background-color: #207202;
+    color: #fff;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+.buttons button:nth-last-child(2) {
+    background-color: #e35209;
+}
+
+.buttons button:nth-last-child(1) {
+    background-color: #f7df1e;
+}
+
+.buttons button:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+/* home page images
+ */
+
+ 
+.images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    width: 200px; /* Adjust the size as needed */
+}
